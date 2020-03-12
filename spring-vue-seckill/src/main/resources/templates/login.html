@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" th:href="@{/static/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container" style="text-align:center;margin-top:50px;">
+    <div class="row col-md-6 col-md-offset-3">
+
+        <div th:text="${message}" style="color: red"></div>
+        <div class="panel panel-default">
+            <div class="panel-heading" th:text="${title}">登录页面</div>
+            <div class="panel-body">
+                <form id="registerForm" th:action="@{/login}" th:object="${user}" method="post">
+                    <div class="input-group"><span class="input-group-addon">username</span>
+                        <!-- <input  id="username" type="text" name="username" class="form-control" placeholder="用户名"> -->
+                        <input id="username" type="text" th:field="*{username}" class="form-control"
+                               placeholder=" 用户名 "></div>
+                    <div><span th:if="${#fields.hasErrors('username')}" th:errors="*{username}"
+                               style="color:red;"></span></div>
+                    <br>
+                    <div class="input-group"><span class="input-group-addon">password</span>
+                        <!-- <input id="password" type="password" name="password" class="formcontrol" placeholder="密码"> -->
+                        <!-- <input id="password" type="password" th:field="*{password}" class="formcontrol" placeholder="密码" >-->
+                        <input id="password" type="password" name="password" class="form-control" placeholder=" 密码 ">
+                    </div>
+                    <div><span th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
+                               style="color:red;"></span></div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">验证码</span>
+                        <input type="text" id="code" name="code" class="form-control" style="width: 250px"/>
+                        <img id="imgObj" src="/validateCode" alt="验证码" class="img-responsive" onclick="changeImg()">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary register-btn">登录</button>
+                    <button type="reset" class="btn btn-warning" href="/reg">注册</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script th:src="@{/static/js/jquery-3.4.1.min.js}"></script>
+<script type="text/javascript">
+    function changeImg() {
+        var imgStr = $("#imgObj");
+        var src = imgStr.attr("src");
+        imgStr.attr("src", changeUrl(src));
+    }
+
+    function changeUrl(url) {
+        var timestamp = (new Date()).valueOf();
+        var index = url.indexOf("?", url)
+        if (index > 0) {
+            url = url.substring(index, url.indexOf(url, "?"));
+        }
+        if ((url.indexOf("&") >= 0)) {
+            url = url + "×tamp=" + timestamp;
+        } else {
+            url = url + "?timestamp=" + timestamp;
+        }
+        return url;
+    }
+</script>
+
+</body>
+</html>
