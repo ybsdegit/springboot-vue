@@ -20,7 +20,7 @@ public abstract class BaseRedis<T> {
     /**
      * 存入redis中的key
      *
-     * @return 实训邦 www.sxbang.net
+     * @return 
      * 12 / 19
      */
     protected abstract String getRedisKey();
@@ -28,7 +28,9 @@ public abstract class BaseRedis<T> {
     /**
      * 添加
      *
-     * @param key key      * @param doamin 对象      * @param expire 过期时间(单位:秒),传入 -1 时表示不设置过期时间
+     * @param key key
+     * @param doamin 对象
+     * @param expire 过期时间(单位:秒),传入 -1 时表示不设置过期时间
      */
     public void put(String key, T doamin, long expire) {
         hashOperations.put(getRedisKey(), key, doamin);
@@ -47,8 +49,7 @@ public abstract class BaseRedis<T> {
 
     /**
      * 查询
-     * * @param key 查询的key
-     *
+     * @param key 查询的key
      * @return
      */
     public T get(String key) {
@@ -57,7 +58,6 @@ public abstract class BaseRedis<T> {
 
     /**
      * 获取当前redis库下所有对象
-     *
      * @return
      */
     public List<T> getAll() {
@@ -66,9 +66,6 @@ public abstract class BaseRedis<T> {
 
     /**
      * 查询查询当前redis库下所有key
-     * 实训邦 www.sxbang.net
-     * 13 / 19
-     *
      * @return
      */
     public Set<String> getKeys() {
@@ -77,8 +74,7 @@ public abstract class BaseRedis<T> {
 
     /**
      * 判断key是否存在redis中
-     * * @param key 传入key的名称
-     *
+     * @param key 传入key的名称
      * @return
      */
     public boolean isKeyExists(String key) {
@@ -87,7 +83,6 @@ public abstract class BaseRedis<T> {
 
     /**
      * 查询当前key下缓存数量
-     *
      * @return
      */
     public long count() {
