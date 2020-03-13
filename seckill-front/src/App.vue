@@ -1,32 +1,48 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <router-view></router-view>
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+    import HelloWorld from './components/HelloWorld.vue'
 
-#nav {
-  padding: 30px;
-}
+    export default {
+        name: 'app',
+        components: {
+            HelloWorld
+        }
+    }
+</script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+<style lang="scss">
+    @import './assets/css/replace-elementui.css';
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "微 软雅黑", sans-serif;
+    }
+
+    #app {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    ;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
 </style>
