@@ -24,5 +24,6 @@ Vue.filter('date-format', function (value) {
 new Vue({
   router,
   store,
+  e1: '#app',
   render: h => h(App)
 }).$mount('#app')

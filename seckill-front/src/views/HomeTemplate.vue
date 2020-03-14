@@ -10,9 +10,9 @@
                 </div>
                 <div id="user-setting">
                     <!--<i class="el-icon-setting" />-->
-                    <el-menu :default-active="activeIndex" mode="horizontal">
+                    <el-menu mode="horizontal">
                         <el-submenu index="1">
-                            <template slot="title">用户名</template>
+                            <template slot="title">{{getUsername}}</template>
                             <el-menu-item index="1-1">退出</el-menu-item>
                         </el-submenu>
                     </el-menu>
@@ -23,19 +23,26 @@
                     <router-view></router-view>
                 </div>
             </el-main>
-            <el-footer> 版权所有 &copy; 2018 实训邦</el-footer>
+            <el-footer> 版权所有 YBS</el-footer>
         </el-container>
     </div>
 </template>
 
-<style> @import '../assets/css/home-template.css'; </style>
 
 <script>
     export default {
         name: "CourseList",
-        data: {
-
+        data() {
+            return {}
+        },
+        computed: {
+            getUsername: function () {
+                return this.$store.getters.getUserName
+            }
         }
-
     }
 </script>
+
+<style >
+    @import '../assets/css/home-template.css';
+</style>
