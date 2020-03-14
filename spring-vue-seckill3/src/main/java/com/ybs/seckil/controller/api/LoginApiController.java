@@ -1,4 +1,4 @@
-package com.ybs.seckil.controller;
+package com.ybs.seckil.controller.api;
 
 import com.ybs.seckil.base.result.Result;
 import com.ybs.seckil.base.result.ResultCode;
@@ -8,12 +8,13 @@ import com.ybs.seckil.util.MD5Util;
 import com.ybs.seckil.util.UUIDUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  * RegisterController

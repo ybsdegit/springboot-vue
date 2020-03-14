@@ -43,7 +43,21 @@
                 const _this = this
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                       alert('注册')
+                        this.axios.post('/api/register', qs.stringify({username: _this.user.username, password: _this.user.password}))
+                        .then(function (response) {
+                            console.log(response)
+                            if (response.data.code == "200"){
+                                _this.$message.success(response.data.message);
+                                // _this.$router.push("/")
+                            }else {
+                                _this.$message.error(response.data.message);
+                                return false;
+                            }
+                        })
+                        .catch(function (error) {
+                            _this.$message.error("系统错误")
+
+                        })
                     } else {
                         console.log('error submit!!');
                         this.$message.error("用户名密码格式不对")
@@ -70,9 +84,10 @@
                         {min: 3, max: 8, message: '长度在 3 到 8 个字符', trigger: 'blur'}
 
                     ],
-                    repassword:[
+                    repassword: [
                         {required: true, message: '请确认密码', trigger: 'blur'},
-                        { validator: (rule, value, callback) => {
+                        {
+                            validator: (rule, value, callback) => {
                                 if (value === '') {
                                     callback(new Error('请再次输入密码'));
                                 } else if (value !== this.user.password) {
@@ -80,7 +95,8 @@
                                 } else {
                                     callback();
                                 }
-                            }, trigger: 'blur' }
+                            }, trigger: 'blur'
+                        }
                     ]
                 }
             }

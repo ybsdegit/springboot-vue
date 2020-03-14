@@ -1,22 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import About from "../views/About";
 import Login from "../views/Login";
 import Register from "../views/Register";
+import HomeTemplate from "../views/HomeTemplate"
+import CourseList from "../views/CourseList";
+import OrderList from "../views/OrderList";
+import Course from "../views/Course";
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
+    name: 'Login',
+    component: Login
   },
   {
     path: '/login',
@@ -27,7 +24,18 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: Register
+  },
+  {
+    path: '/home',
+    name: 'HomeTemplate',
+    component: HomeTemplate,
+    children: [
+      {path: 'course/list', component: CourseList},
+      {path: 'order/list', component: OrderList},
+      {path: 'course/:courseNo', component: Course},
+    ]
   }
+
 
 ]
 

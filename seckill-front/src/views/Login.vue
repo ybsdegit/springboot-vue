@@ -55,7 +55,7 @@
                         _this.$store.dispatch('login', {username: _this.user.username, password: _this.user.password})
                             .then((response) => {
                                 _this.$message.success(response.data.message);
-                                _this.$router.push("/")
+                                _this.$router.push("/home/course/list")
                             })
                             .catch((response) =>{
                             _this.$message.error(response.data.message);
