@@ -6,8 +6,10 @@ import com.ybs.seckil.model.Course;
 import com.ybs.seckil.model.User;
 import com.ybs.seckil.service.CourseService;
 import com.ybs.seckil.service.UserService;
+import com.ybs.seckil.util.CourseUtil;
 import com.ybs.seckil.util.MD5Util;
 import com.ybs.seckil.util.UUIDUtil;
+import com.ybs.seckil.vo.CourseVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -35,5 +37,10 @@ public class CourseApiController {
     @GetMapping("/courseList")
     public Result<List<Course>> courseList(){
         return Result.success(courseService.findAllCourse());
+    }
+
+    @GetMapping("/courseDetail/{courseNo}")
+    public Result<CourseVo> courseDetail(@PathVariable String courseNo){
+        return Result.success(CourseUtil.courseToCourseVo(courseService.finCourseByCourseNo(courseNo)));
     }
 }

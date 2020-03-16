@@ -3,7 +3,7 @@ spring:
   datasource:
     username: root
     password: mima
-    url: jdbc:mysql://192.168.2.134:3306/seckill?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.2.134:3306/seckill?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true

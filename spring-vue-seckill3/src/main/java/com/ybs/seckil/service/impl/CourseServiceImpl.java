@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * UserService
@@ -45,5 +46,11 @@ public class CourseServiceImpl implements CourseService {
             courseList = JSON.parseArray(courseListString, Course.class);
         }
         return courseList;
+    }
+
+    @Override
+    public Course finCourseByCourseNo(String courseNo) {
+        Optional<Course> course = courseRepository.findById(courseNo);
+        return course.orElse(null); // course.isPresent()? user.get() : null
     }
 }
