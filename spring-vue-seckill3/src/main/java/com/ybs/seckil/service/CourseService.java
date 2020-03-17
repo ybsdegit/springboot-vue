@@ -12,5 +12,7 @@ import java.util.List;
 public interface CourseService {
     public List<Course> findAllCourse();
 
-    public Course finCourseByCourseNo(String courseNo);
+    public Course findCourseByCourseNo(String courseNo);
+
+    public int reduceStockByCourseNo(String courseNo);
 }

@@ -9,6 +9,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -21,6 +22,7 @@ import java.util.Optional;
  */
 
 @Service
+@Transactional
 public class CourseServiceImpl implements CourseService {
 
     public static final String ALL_COURSE_REDIS = "allCourseRedis";
@@ -30,6 +32,8 @@ public class CourseServiceImpl implements CourseService {
 
     @Autowired
     private CourseRedis courseRedis;
+
+
 
 
     @Override
@@ -49,8 +53,14 @@ public class CourseServiceImpl implements CourseService {
     }
 
     @Override
-    public Course finCourseByCourseNo(String courseNo) {
+    public Course findCourseByCourseNo(String courseNo) {
         Optional<Course> course = courseRepository.findById(courseNo);
         return course.orElse(null); // course.isPresent()? user.get() : null
+    }
+
+    @Override
+    public int reduceStockByCourseNo(String courseNo) {
+
+        return courseRepository.reduceStockByCourseNo(courseNo);
     }
 }

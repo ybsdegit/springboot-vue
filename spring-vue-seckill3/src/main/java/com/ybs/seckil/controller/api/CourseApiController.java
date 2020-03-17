@@ -41,6 +41,6 @@ public class CourseApiController {
 
     @GetMapping("/courseDetail/{courseNo}")
     public Result<CourseVo> courseDetail(@PathVariable String courseNo){
-        return Result.success(CourseUtil.courseToCourseVo(courseService.finCourseByCourseNo(courseNo)));
+        return Result.success(CourseUtil.courseToCourseVo(courseService.findCourseByCourseNo(courseNo)));
     }
 }
