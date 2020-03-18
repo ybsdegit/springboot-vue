@@ -99,7 +99,7 @@
                     "courcePrice": 0,
                     "stockQuantity": 0,
                     "courseType": 0,
-                    "coursePic": "c1.png"
+                    "coursePic": "c2.png"
                 },
                 courseStatus: '',  //  0还没开始  1正在进行中 2已结束
                 remainTime: '11111',

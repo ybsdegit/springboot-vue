@@ -4,9 +4,11 @@ import com.ybs.seckil.model.Orders;
 import com.ybs.seckil.repository.OrderRepository;
 import com.ybs.seckil.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 /**
  * OrderServiceImpl
@@ -31,4 +33,10 @@ public class OrderServiceImpl implements OrderService {
     public Orders saveAndFlush(Orders orders) {
         return orderRepository.saveAndFlush(orders);
     }
+
+    @Override
+    public List<Orders> findAllByUsername(String username, Sort sort) {
+        return orderRepository.findByUsername(username, sort);
+    }
+
 }

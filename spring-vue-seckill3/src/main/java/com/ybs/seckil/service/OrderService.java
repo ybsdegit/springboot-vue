@@ -1,6 +1,9 @@
 package com.ybs.seckil.service;
 
 import com.ybs.seckil.model.Orders;
+import org.springframework.data.domain.Sort;
+
+import java.util.List;
 
 /**
  * OrderService
@@ -13,4 +16,6 @@ public interface OrderService {
     Orders getOrderByUsernameAndCourseNo(String username, String courseNo);
 
     Orders saveAndFlush(Orders orders);
+
+    List<Orders> findAllByUsername(String username, Sort sort);
 }
