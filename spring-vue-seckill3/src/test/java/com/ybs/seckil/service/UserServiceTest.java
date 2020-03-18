@@ -50,12 +50,12 @@ public class UserServiceTest {
         userRedis.put(user.getUsername(), user, -1);
     }
 
-    @Test
+//    @Test
     public void testRedis2(){
-        List<User> all = userRedis.getAll();
+       /* List<User> all = userRedis.get();
         for (User user : all) {
             System.out.println(user);
-        }
+        }*/
     }
 
     @Test

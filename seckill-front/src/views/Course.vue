@@ -128,7 +128,7 @@
         },
         methods: {
             book() {
-               /* var self = this;
+                var self = this;
                 self.axios.get('/api/getPath/' + self.$route.params.courseNo)
                     .then(function (response) {
                         var path = response.data;
@@ -143,7 +143,7 @@
                     })
                     .catch(function (error) {
                         self.$message.error('出错')
-                    });*/
+                    });
             },
             getResult(response) {
                 var code = response.data.code;
