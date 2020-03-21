@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4721687d-30c7-4980-b6f5-9cd5ba10d25b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/config/UserArgumentResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/util/UUIDUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/SeckilApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/config/UserArgumentResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/controller/SamplerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/controller/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/redis/BaseRedis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/redis/UserRedis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/util/UUIDUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/java/com/ybs/seckil/util/ValidateCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/css/community.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/static/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/test/java/com/ybs/seckil/SeckilApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-vue-seckill2/src/test/java/com/ybs/seckil/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-vue-seckill/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-vue-seckill/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/main/java/com/ybs/seckil/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-vue-seckill/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-vue-seckill/src/test/java/com/ybs/seckil/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-vue-seckill/src/test/java/com/ybs/seckil/service/UserServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Z4CpzqJKJNGmGLzgG2wXGTECv9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-vue-seckill2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4721687d-30c7-4980-b6f5-9cd5ba10d25b" name="Default Changelist" comment="" />
+      <created>1584089165791</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584089165791</updated>
+      <workItem from="1584089231912" duration="37000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2240" y="1185" key="FileChooserDialogImpl" timestamp="1584089261942">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state x="2240" y="1185" key="FileChooserDialogImpl/0.30.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1584089261942" />
+  </component>
+</project>
