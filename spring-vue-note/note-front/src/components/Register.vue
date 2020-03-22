@@ -1,11 +1,13 @@
 <template>
     <div>
+        <img alt="Vue logo" src="../assets/logo.png">
+        <h1>注册</h1>
         <el-form ref="form" :model="registerForm" label-width="80px">
-            <el-form-item>
+            <el-form-item label="用户名">
                 <el-input placeholder="请输入用户名" v-model="registerForm.username"></el-input>
             </el-form-item>
 
-            <el-form-item>
+            <el-form-item label="密码">
                 <el-input placeholder="请输入密码" v-model="registerForm.password" show-password></el-input>
             </el-form-item>
             <el-form-item>
@@ -22,14 +24,32 @@
         data() {
             return {
                 registerForm: {
-                    username: '',
-                    password: '',
+                    username: '222',
+                    password: '111',
                 }
             }
         },
         methods: {
             onSubmit() {
-                console.log('submit!');
+                const _this = this
+                this.axios.post('/register', {
+                    username: this.registerForm.username,
+                    password: this.registerForm.password,
+                })
+                .then(function(response){
+                    console.log(response)
+                    if (response.data.status == 200){
+                        _this.$message.success(response.data.msg);
+                        _this.$router.push('/login')
+                    }else{
+                        _this.$message.error(response.data.msg);
+
+                    }
+                })
+                .catch(function (response) {
+                    console.log(response)
+                    _this.$message.error(response.data);
+                })
             }
         }
     }

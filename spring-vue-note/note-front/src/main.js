@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import './plugins/axios'
+// import VueAxios from 'vue-axios'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -11,3 +13,9 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+axios.defaults.baseURL = "/api"
+axios.defaults.withCredentials = true
+
+
+// Vue.use(VueAxios, axios)
