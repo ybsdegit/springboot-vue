@@ -2,6 +2,7 @@ package com.ybs.note.controller;
 
 import com.ybs.note.pojo.User;
 import com.ybs.note.response.Response;
+import com.ybs.note.service.SmsService;
 import com.ybs.note.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -26,6 +27,9 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private SmsService smsService;
 
     @GetMapping("/find_user/{username}")
     public User findUser(@PathVariable String username){
@@ -66,6 +70,16 @@ public class UserController {
         }catch (AuthenticationException e){
             return new Response(502, "用户名不存在或密码错误", token);
         }
+    }
+
+
+    @GetMapping("/sendSms/{telPhone}")
+    public Response sendSms(@PathVariable String telPhone){
+        String code = smsService.sendSms(telPhone);
+        if (code == null){
+            return new Response(500, "发送失败");
+        }
+        return new Response(200, "发送成功", code);
     }
 
 
