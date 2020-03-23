@@ -75,6 +75,10 @@ public class UserController {
 
     @GetMapping("/sendSms/{telPhone}")
     public Response sendSms(@PathVariable String telPhone){
+        if (telPhone.length() < 10){
+            return new Response(500, "手机号格式不对");
+        }
+        System.out.println(telPhone);
         String code = smsService.sendSms(telPhone);
         if (code == null){
             return new Response(500, "发送失败");

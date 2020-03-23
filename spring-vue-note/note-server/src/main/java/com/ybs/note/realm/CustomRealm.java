@@ -28,6 +28,9 @@ public class CustomRealm extends AuthorizingRealm {
         // 认证
         String userName = token.getPrincipal().toString();
         User user = userService.getUserByUsername(userName);
+        if (user == null){
+            return null; // 抛出异常 UnknownAccountException
+        }
         String password = user.getPassword();
         String salt = user.getSalt();
         SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(user, password, ByteSource.Util.bytes(salt), getName());
