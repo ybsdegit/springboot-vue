@@ -10,6 +10,11 @@
             <el-form-item label="密码">
                 <el-input placeholder="请输入密码" v-model="registerForm.password" show-password></el-input>
             </el-form-item>
+
+            <el-form-item label="手机号" prop="phone">
+                <el-input placeholder="请输入手机号" v-model="registerForm.phone"></el-input>
+            </el-form-item>
+
             <el-form-item>
                 <el-button type="primary" @click="onSubmit">提交</el-button>
                 <el-button>取消</el-button>
@@ -26,6 +31,7 @@
                 registerForm: {
                     username: '222',
                     password: '111',
+                    phone: '18810911636',
                 }
             }
         },
@@ -35,6 +41,7 @@
                 this.axios.post('/register', {
                     username: this.registerForm.username,
                     password: this.registerForm.password,
+                    phone: this.registerForm.phone
                 })
                 .then(function(response){
                     console.log(response)

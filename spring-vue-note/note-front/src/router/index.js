@@ -4,7 +4,7 @@ import Home from "../components/home/Home";
 import Register from "../components/Register";
 import Login from "../components/Login";
 import Index from "../components/Index";
-import Bookshelf from "../components/bookshelf/Bookshelf";
+import BookShelf from "../components/bookshelf/BookShelf";
 
 Vue.use(VueRouter)
 
@@ -13,7 +13,7 @@ const routes = [
         path: '/', name: 'Index', component: Index, redirect: '/home',
         children: [
             {path: '/home', name: "home", component: Home},
-            {path: '/bookshelf', name: "bookshelf", component: Bookshelf},
+            {path: '/bookshelf', name: "bookshelf", component: BookShelf},
         ]
     },
     {path: '/register', name: "Register", component: Register},

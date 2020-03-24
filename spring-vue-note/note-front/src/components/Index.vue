@@ -3,7 +3,6 @@
         <nav-menu/>
         <router-view/>
     </div>
-
 </template>
 
 <script>

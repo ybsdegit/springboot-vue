@@ -99,7 +99,6 @@
             },
             sendSms(phone){
                 const _this = this
-                const url = '/sendSms/'+_this.registerForm.phone
                 this.axios.get('/sendSms/'+_this.registerForm.phone)
                 .then(function (response) {
                     if (response.data.status == 200){
