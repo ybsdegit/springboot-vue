@@ -32,7 +32,8 @@ public class LoginInterceptor implements HandlerInterceptor {
                 }
             }
         }catch (Exception e){
-            throw new BlogException(ResultEnum.NOT_LOGIN);
+            e.printStackTrace();
+            throw new BlogException();
         }
 
         throw new BlogException(ResultEnum.NOT_LOGIN);
