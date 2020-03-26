@@ -59,4 +59,22 @@ public class TypeServiceImpl implements TypeService {
         typeMapper.update(type);
     }
 
+    @Override
+    public void disable(Integer id) {
+        // 先查再弃用
+        Type type = typeMapper.getById(id);
+        type.setEnable(StateEnums.NOT_ENABLE.getCode());
+        typeMapper.update(type);
+    }
+
+    @Override
+    public void deleteById(Integer id) {
+        typeMapper.deleteById(id);
+    }
+
+    @Override
+    public Type getById(Integer id) {
+        return typeMapper.getById(id);
+    }
+
 }

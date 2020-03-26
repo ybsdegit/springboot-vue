@@ -23,6 +23,17 @@ public class TypeController {
     private TypeService typeService;
 
     /**
+     * 根据ID查询
+     * @param id
+     * @return
+     */
+    @GetMapping("/get/{id}")
+    public Result<Type> getById(@PathVariable Integer id){
+        Type type = typeService.getById(id);
+        return new Result<>(type);
+    }
+
+    /**
      * 添加类型
      * @param type
      * @return
@@ -73,6 +84,28 @@ public class TypeController {
     public  Result<Object> enable(@PathVariable Integer id){
         typeService.enableById(id);
         return new Result<>("启用成功");
+    }
+
+    /**
+     * 根据ID弃用
+     * @param id
+     * @return
+     */
+    @PutMapping("/disable/{id}")
+    public  Result<Object> disable(@PathVariable Integer id){
+        typeService.disable(id);
+        return new Result<>("弃用成功");
+    }
+
+    /**
+     * 根据ID删除
+     * @param id
+     * @return
+     */
+    @DeleteMapping("/delete/{id}")
+    public Result<Object> delete(@PathVariable Integer id){
+        typeService.deleteById(id);
+        return new Result<>("删除成功");
     }
 
 

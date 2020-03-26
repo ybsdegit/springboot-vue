@@ -35,4 +35,14 @@ public interface TypeService {
      * @param id
      */
     void enableById(Integer id);
+
+    /**
+     * 根据ID弃用
+     * @param id
+     */
+    void disable(Integer id);
+
+    void deleteById(Integer id);
+
+    Type getById(Integer id);
 }

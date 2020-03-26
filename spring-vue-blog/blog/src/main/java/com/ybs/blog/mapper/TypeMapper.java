@@ -38,4 +38,10 @@ public interface TypeMapper {
      * @return
      */
     Type getById(Integer id);
+
+    /**
+     * 根据ID删除
+     * @param id
+     */
+    void deleteById(Integer id);
 }

@@ -19,7 +19,7 @@
             #{typeName}
         )
     </insert>
-    <update id="update" parameterType="com.ybs.blog.pojo.Type">
+    <!--<update id="update" parameterType="com.ybs.blog.pojo.Type">
         update bl_type set
         version = version + 1
         <if test="typeName!=null and typeName != ''">
@@ -33,8 +33,8 @@
         </if>
         where type_id = #{typeId}
         and version = #{version}
-    </update>
-   <!-- <update id="update" parameterType="com.ybs.blog.pojo.Type">
+    </update>-->
+    <update id="update" parameterType="com.ybs.blog.pojo.Type">
         update bl_type
         <set>
             <if test="typeName!=null and typeName!=''">
@@ -48,7 +48,7 @@
             </if>
         </set>
         where type_id = #{typeId}
-    </update>-->
+    </update>
 
     <update id="deleteById">
         update bl_type set
