@@ -2,11 +2,15 @@ package com.ybs.blog.service.impl;
 
 
 import com.ybs.blog.mapper.LogMapper;
+import com.ybs.blog.pojo.About;
 import com.ybs.blog.pojo.Log;
 import com.ybs.blog.service.LogService;
+import com.ybs.blog.utils.Page;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -31,4 +35,28 @@ public class LogServiceImpl implements LogService {
     public void save(Log logger) {
         logMapper.save(logger);
 }
+
+    @Override
+    public Page<Log> getByPage(Page<Log> page) {
+        // 查询数据
+        List<Log> logList = logMapper.getByPage(page);
+        page.setList(logList);
+
+        // 查询总数
+        int totalCount = logMapper.getCountByPage(page);
+        page.setTotalCount(totalCount);
+        return page;
+
+    }
+
+    @Override
+    public void deleteById(Integer id) {
+        logMapper.deleteById(id);
+    }
+
+    @Override
+    public void deleteByIds(List<Integer> ids) {
+        logMapper.deleteByIds(ids);
+
+    }
 }
