@@ -29,9 +29,18 @@ public enum StateEnums {
     SEX_MAN(1, "男"),
     SEX_WOMAN(2, "女"),
 
-    REQUEST_SUCCESS(1, "请求成功"),
-    REQUEST_ERROR(2, "请求异常"),
+    /**
+     * 请求访问状态枚举
+     */
+    REQUEST_SUCCESS(1, "请求正常"),
+    REQUEST_ERROR(0, "请求异常"),
 
+    /**
+     * 用户标识。
+     * 0表示管理员，1表示普通用户
+     */
+    ADMIN(0, "管理员"),
+    USER(1, "普通用户");
     ;
     private Integer code;
     private String message;

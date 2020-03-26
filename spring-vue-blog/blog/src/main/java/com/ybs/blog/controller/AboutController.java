@@ -1,13 +1,16 @@
 package com.ybs.blog.controller;
 
+import com.ybs.blog.enums.ResultEnum;
 import com.ybs.blog.pojo.About;
 import com.ybs.blog.service.AboutService;
 import com.ybs.blog.utils.Page;
 import com.ybs.blog.utils.Result;
+import com.ybs.blog.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -108,6 +111,16 @@ public class AboutController {
      */
     @PostMapping("/getByPage")
     public Result<Page<About>> getByPage(@RequestBody Page<About> page){
+        String sortColumn = page.getSortColumn();
+        if (StringUtils.isNotBlank(sortColumn)){
+            // 排序列不为空
+            String[] sortColumns = {"about_read", "created_time", "update_time"};
+            List<String> sortList = Arrays.asList(sortColumns);
+            if (!sortList.contains(sortColumn.toLowerCase())){
+                return new Result<>(ResultEnum.PARAMS_ERROR.getCode(),"排序参数不合法");
+            }
+        }
+
         page = aboutService.getByPage(page);
         return new Result<>(page);
     }
