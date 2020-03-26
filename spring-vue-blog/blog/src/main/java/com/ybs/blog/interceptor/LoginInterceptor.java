@@ -23,13 +23,18 @@ public class LoginInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         // 获取 token
         String token = request.getHeader("Authorization");
-        if (StringUtils.isNotBlank(token)){
-           Admin loginAdmin = (Admin) ShiroUtils.getLoginUser();
-           if (loginAdmin != null){
-               // token 有效
-               return true;
-           }
+        try {
+            if (StringUtils.isNotBlank(token)){
+                Admin loginAdmin = (Admin) ShiroUtils.getLoginUser();
+                if (loginAdmin != null){
+                    // token 有效
+                    return true;
+                }
+            }
+        }catch (Exception e){
+            throw new BlogException(ResultEnum.NOT_LOGIN);
         }
+
         throw new BlogException(ResultEnum.NOT_LOGIN);
     }
 }
