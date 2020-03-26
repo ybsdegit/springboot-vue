@@ -1,0 +1,211 @@
+2020-03-26 01:02:39.425 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:03:30.059 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:04:20.067 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:37:53.050 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:39:19.730 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:42:12.615 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:44:13.847 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:46:11.220 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:48:28.965 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:52:21.353 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:53:33.480 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:55:27.469 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 01:59:16.555 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:04:28.987 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:05:28.805 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:09:26.243 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:10:06.515 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:11:28.093 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:14:02.900 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:14:58.928 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:17:15.044 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:19:15.988 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:20:53.993 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:24:16.437 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:27:27.860 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:29:35.246 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:31:16.212 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:32:32.656 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:32:36.502 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 02:32:36.529 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), GET(String), null, 11(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 02:32:36.619 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 02:32:36.620 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 2(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'log_method' cannot be null
+### The error may involve com.ybs.blog.mapper.LogMapper.save-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'log_method' cannot be null
+; Column 'log_method' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'log_method' cannot be null
+	at com.ybs.blog.service.impl.LogServiceImpl.save(LogServiceImpl.java:32)
+	at com.ybs.blog.aspect.RequestAspect.doAfterReturning(RequestAspect.java:83)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$2c116027.testException(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'log_method' cannot be null
+(String), null, 0(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 02:34:01.084 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 02:34:16.578 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 02:34:16.593 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 11(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 02:34:16.604 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 02:34:27.148 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 02:34:27.149 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/2(String), [2](String), 2(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:64)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$8257400c.testException(<generated>)
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-03-26 02:34:27.153 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:09:40.438 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:10:06.417 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:10:37.640 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:11:15.022 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:12:02.861 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:12:29.170 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:14:02.847 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:20:55.542 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:21:08.491 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:21:08.510 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), null, POST(String), 1499(Long), {"code":40002,"msg":"用户名或密码错误"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:21:08.515 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:21:21.658 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:21:21.659 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), null, POST(String), 5633(Long), {"code":40002,"msg":"用户名或密码错误"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:21:21.664 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:21:26.018 DEBUG [http-nio-8080-exec-4]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:21:26.019 DEBUG [http-nio-8080-exec-4]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=123)](String), 1(Integer), null, POST(String), 3(Long), {"code":40002,"msg":"用户名或密码错误"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:21:26.023 DEBUG [http-nio-8080-exec-4]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:21:27.215 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:21:27.216 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=123)](String), 1(Integer), null, POST(String), 3(Long), {"code":40002,"msg":"用户名或密码错误"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:21:27.220 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:21:30.309 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:21:30.309 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), null, POST(String), 2(Long), {"code":40002,"msg":"用户名或密码错误"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:21:30.312 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:22:21.233 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:22:21.234 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), null, POST(String), 30289(Long), {"code":40002,"msg":"用户名或密码错误"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:22:21.237 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:25:00.228 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:25:00.229 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), null, POST(String), 62241(Long), {"code":40002,"msg":"用户名或密码错误"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:25:00.232 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:26:38.148 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:26:59.149 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-03-26 03:26:59.362 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -==> Parameters: root(String)
+2020-03-26 03:26:59.546 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -<==      Total: 1
+2020-03-26 03:27:04.640 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:27:04.641 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), null, POST(String), 10833(Long), {"code":20000,"data":{"token":"B2F0E2E1C06CFAAB4A08ECA5956754D8"},"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:27:04.644 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:31:35.866 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:31:35.867 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 2(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:31:35.870 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:31:41.781 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:31:41.783 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/2(String), [2](String), 2(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:31:41.790 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:31:44.086 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:31:44.087 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:31:44.090 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:31:58.839 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:31:58.841 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 2(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:31:58.852 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:00.192 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:00.192 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:00.195 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:02.527 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:02.528 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:02.538 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:05.104 DEBUG [http-nio-8080-exec-4]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:05.105 DEBUG [http-nio-8080-exec-4]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:05.108 DEBUG [http-nio-8080-exec-4]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:07.606 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:07.606 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:07.609 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:12.859 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:12.859 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/2(String), [2](String), 2(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:12.865 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:49.004 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:49.005 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/2(String), [2](String), 2(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:49.007 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:49.668 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:49.668 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/2(String), [2](String), 2(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 0(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:49.671 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:52.027 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:52.028 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/2(String), [2](String), 2(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:52.033 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:32:54.750 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:32:54.751 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/2(String), [2](String), 2(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 0(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:32:54.754 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:35:43.492 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:35:43.493 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/2(String), [2](String), 2(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:35:43.496 DEBUG [http-nio-8080-exec-7]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:35:47.555 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:35:47.557 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 2(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:35:47.559 DEBUG [http-nio-8080-exec-8]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:35:50.435 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:35:50.436 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 1(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:35:50.439 DEBUG [http-nio-8080-exec-9]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:35:52.655 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:35:52.656 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), 	at com.ybs.blog.controller.TestController.testException(TestController.java:29)
+	at com.ybs.blog.controller.TestController$$FastClassBySpringCGLIB$$c2dfd6a5.invoke(<generated>)
+	at com.ybs.blog.aspect.RequestAspect.doAround(RequestAspect.java:61)
+	at com.ybs.blog.controller.TestController$$EnhancerBySpringCGLIB$$28741b1c.testException(<generated>)
+(String), GET(String), 1(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:35:52.658 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:36:48.784 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:36:48.785 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/info(String), [](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"data":{"name":"元宝森","password":"e10adc3949ba59abbe56e057f20f883e","signature":"而立","username":"root"},"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:36:48.788 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:37:33.167 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:37:42.673 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:37:42.675 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 5(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:37:42.679 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:38:01.611 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:38:01.617 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:38:01.620 DEBUG [http-nio-8080-exec-5]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:38:38.709 DEBUG [restartedMain]com.ybs.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-26 03:38:45.971 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-03-26 03:38:45.987 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -==> Parameters: root(String)
+2020-03-26 03:38:46.003 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -<==      Total: 1
+2020-03-26 03:38:46.056 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:38:46.057 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), null, POST(String), 180(Long), {"code":20000,"data":{"token":"E04A02B9CCA7BA47184725C603C6F2DB"},"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:38:46.059 DEBUG [http-nio-8080-exec-1]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:39:20.457 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:39:20.458 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /test/testException/1(String), [1](String), 1(Integer), null, GET(String), 3(Long), {"code":20000,"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:39:20.461 DEBUG [http-nio-8080-exec-3]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 03:39:23.658 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 03:39:23.659 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/info(String), [](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"data":{"name":"元宝森","password":"","signature":"而立","username":"root"},"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 03:39:23.663 DEBUG [http-nio-8080-exec-2]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 15:35:44.772 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-03-26 15:35:44.774 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -==> Parameters: root(String)
+2020-03-26 15:35:44.777 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.AdminMapper.getByUsername.debug:143 -<==      Total: 1
+2020-03-26 15:35:44.779 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 15:35:44.780 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/login(String), [Admin(id=null, name=null, header=null, signature=null, comment=null, username=root, password=e10adc3949ba59abbe56e057f20f883e)](String), 1(Integer), null, POST(String), 36(Long), {"code":20000,"data":{"token":"1D2B4756F98D47FD8BF18A9086B68E56"},"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 15:35:44.783 DEBUG [http-nio-8080-exec-6]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
+2020-03-26 15:36:00.306 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-03-26 15:36:00.307 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -==> Parameters: /admin/info(String), [](String), 1(Integer), null, GET(String), 1(Long), {"code":20000,"data":{"name":"元宝森","password":"","signature":"而立","username":"root"},"msg":"操作成功"}(String), 0:0:0:0:0:0:0:1(String)
+2020-03-26 15:36:00.309 DEBUG [http-nio-8080-exec-10]com.ybs.blog.mapper.LogMapper.save.debug:143 -<==    Updates: 1
