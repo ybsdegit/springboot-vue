@@ -2,6 +2,7 @@ package com.ybs.blog.controller;
 
 import com.ybs.blog.enums.ResultEnum;
 import com.ybs.blog.pojo.Admin;
+import com.ybs.blog.service.AdminService;
 import com.ybs.blog.utils.Result;
 import com.ybs.blog.utils.ShiroUtils;
 import com.ybs.blog.utils.StringUtils;
@@ -9,6 +10,7 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
@@ -25,6 +27,9 @@ import java.util.Map;
 @RestController
 @RequestMapping("/admin")
 public class AdminController {
+
+    @Autowired
+    private AdminService adminService;
 
     @PostMapping("/login")
     public Result<Object> login(@RequestBody Admin admin){
@@ -56,5 +61,37 @@ public class AdminController {
         Admin admin = (Admin) ShiroUtils.getLoginUser();
         admin.setPassword("");
         return new Result<>(admin);
+    }
+
+    /**
+     * 查询管理员
+     * @return
+     */
+    @GetMapping("/getAdmin")
+    public Result<Admin> getAdmin(){
+        Admin admin = adminService.getAdmin();
+        return new Result<>(admin);
+    }
+
+    /**
+     * 更新个人信息
+     * @param admin
+     * @return
+     */
+    @PutMapping("/updateInfo")
+    public Result<Object> updateInfo(@RequestBody Admin admin){
+        adminService.updateInfo(admin);
+        return new Result<>("更新成功");
+    }
+
+    /**
+     * 更新密码
+     * @param admin
+     * @return
+     */
+    @PutMapping("/updatePassword")
+    public Result<Object> updatePassword(@RequestBody Admin admin){
+        adminService.updatePassword(admin);
+        return new Result<>("更新成功");
     }
 }
