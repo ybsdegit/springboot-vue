@@ -38,9 +38,16 @@ public class BlogServiceImpl implements BlogService {
     private IdWorker idWorker;
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void save(Blog blog) {
         blog.setBlogId(idWorker.nextId()+"");
         blogMapper.save(blog);
+
+        // 取出分类，当前的分类博客数目 + 1
+        Integer blogType = blog.getBlogType();
+        Type type = typeMapper.getById(blogType);
+        type.setTypeBlogCount(type.getTypeBlogCount() + 1);
+        typeMapper.update(type);
     }
 
     @Override
@@ -50,8 +57,34 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void update(Blog blog) {
+
+        // 修改之前先查询
+        Blog oldBlog = blogMapper.getById(blog.getBlogId());
+        // 判断分类有没有别修改， 如果被修改，旧的分类博客数目-1 新的 +1
+
+        // 取出分类
+        Integer oldTypeId = oldBlog.getBlogType();
+        Integer nowTypeID = blog.getBlogType();
+
+        // 修改博客数目
+        if (!oldTypeId.equals(nowTypeID)){
+            // 更新
+            Type oldType = typeMapper.getById(oldTypeId);
+            oldType.setTypeBlogCount(oldType.getTypeBlogCount() - 1);
+            typeMapper.update(oldType);
+
+            Type nowType = typeMapper.getById(nowTypeID);
+            nowType.setTypeBlogCount(nowType.getTypeBlogCount() + 1);
+            typeMapper.update(nowType);
+        }
+
         blogMapper.update(blog);
+
+
+
+
     }
 
     @Override
