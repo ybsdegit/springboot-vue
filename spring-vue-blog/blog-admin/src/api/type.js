@@ -34,7 +34,7 @@ export default {
       method: 'put',
     })
   },
-  disableById(id) { // 启用
+  disableById(id) { // 弃用
     return request({
       url: `/${group_name}/disable/${id}`,
       method: 'put',

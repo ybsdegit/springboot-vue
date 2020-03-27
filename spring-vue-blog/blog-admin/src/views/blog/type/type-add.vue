@@ -28,9 +28,6 @@
         this.loading = true
         typeApi.save(this.type).then(res => {
           this.loading = false
-          if (res.code != 20000){
-            this.$message.error(res.msg)
-          }
           this.$message.success(res.msg)
           this.$emit('closeAddDra')
           this.$emit('getTypeList')

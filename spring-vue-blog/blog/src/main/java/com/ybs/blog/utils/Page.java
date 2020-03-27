@@ -72,7 +72,7 @@ public class Page<T> implements Serializable {
     }
 
     /**
-     * 设置排序列
+     * 设置排序列 驼峰转下划线
      */
     public void setSortColumn(String sortColumn) {
         if (StringUtils.isBlank(sortColumn)) {
