@@ -210,6 +210,7 @@
       this.getByPage()
     },
   }
+
 </script>
 
 <style scoped>
