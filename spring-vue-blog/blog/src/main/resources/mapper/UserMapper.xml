@@ -144,7 +144,7 @@
             and user_email like CONCAT(#{params.userEmail}, '%')
         </if>
     </select>
-    <select id="getByIds" resultMap="BaseResultMap">
+     <select id="getByIds" resultMap="BaseResultMap">
         select
         user_id, version
         from bl_user

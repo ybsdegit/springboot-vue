@@ -83,7 +83,6 @@
           this.$emit('getByPage')
         })
           .catch(res => {
-            console.log(res)
             this.loading = false
           })
       },

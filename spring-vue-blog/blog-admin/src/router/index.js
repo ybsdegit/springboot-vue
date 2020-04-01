@@ -59,6 +59,28 @@ export const constantRoutes = [
     ]
   },
 
+  {
+    path: '/user',
+    component: Layout,
+    redirect: '/user/admin',
+    name: 'UserManager',
+    meta: { title: '用户管理', icon: 'table' },
+    children: [
+      {
+        path: 'admin',
+        name: 'Admin',
+        component: () => import('@/views/user/admin/admin-update'),
+        meta: { title: '管理员', icon: 'table' }
+      },
+      {
+        path: 'user',
+        name: 'User',
+        component: () => import('@/views/user/user/user-list'),
+        meta: { title: '用户', icon: 'table' }
+      },
+    ]
+  },
+
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]

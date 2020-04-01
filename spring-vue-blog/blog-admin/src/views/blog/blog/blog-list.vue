@@ -5,7 +5,7 @@
       <el-form-item label="标题">
         <el-input v-model="page.params.blogTitle" placeholder="博客标题" clearable></el-input>
       </el-form-item>
-      <el-form-item label="活动区域">
+      <el-form-item label="分类">
         <el-select v-model="page.params.typeId" placeholder="分类" clearable filterable>
           <el-option v-for="item in typeList" :key="item.typeId" :label="item.typeName"
                      :value="item.typeId"></el-option>
