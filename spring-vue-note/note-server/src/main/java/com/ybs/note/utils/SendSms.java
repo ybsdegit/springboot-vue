@@ -14,10 +14,10 @@ import java.util.Random;
 
 public class SendSms {
 
-    private static final String AccessKeyId = "LTAI4FibViPiJ6qK6916PHkp";
-    private static final String AccessKeySecret = "M2tK5gOOjgxZQ3fqKp8yrulKiuks24";
-    private static final String signName = "鲍森问答论坛";
-    private static final String templateCode = "SMS_181866518";
+    private static final String AccessKeyId = "***";
+    private static final String AccessKeySecret = "***";
+    private static final String signName = "**";
+    private static final String templateCode = "***";
 
 
     public static boolean sendCode(String telPhone, String code){
