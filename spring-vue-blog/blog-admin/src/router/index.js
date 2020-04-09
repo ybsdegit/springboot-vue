@@ -81,6 +81,28 @@ export const constantRoutes = [
     ]
   },
 
+  {
+    path: '/sys',
+    component: Layout,
+    redirect: '/sys/log',
+    name: 'System',
+    meta: { title: '系统管理', icon: 'table' },
+    children: [
+      {
+        path: 'log',
+        name: 'log',
+        component: () => import('@/views/sys/log/log-list'),
+        meta: { title: '系统日志', icon: 'table' }
+      },
+      {
+        path: 'music',
+        name: 'music',
+        component: () => import('@/views/sys/music/music-list'),
+        meta: { title: '音乐', icon: 'table' }
+      },
+    ]
+  },
+
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
