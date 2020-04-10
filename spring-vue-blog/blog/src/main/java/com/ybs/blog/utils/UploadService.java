@@ -32,9 +32,9 @@ public class UploadService {
     public String uploadImage(MultipartFile file) {
         // 1、校验文件类型
         String contentType = file.getContentType();
-        if (!uploadConfig.getAllowTypes().contains(contentType)) {
+       /* if (!uploadConfig.getAllowTypes().contains(contentType)) {
             throw new RuntimeException("文件类型不支持");
-        }
+        }*/
 
         try {
             // 3、上传到FastDFS

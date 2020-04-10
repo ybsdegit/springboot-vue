@@ -1,21 +1,13 @@
 <template>
   <div>
     <el-form ref="form" :model="music" label-width="80px" size="mini">
-      <el-form-item label="标题">
-        <el-input v-model="music.musicTitle"></el-input>
+      <el-form-item label="名称">
+        <el-input v-model="music.name"></el-input>
       </el-form-item>
-      <el-form-item label="分类">
-        <el-select v-model="music.musicType" clearable filterable placeholder="请选择" style="width: 100%">
-          <el-option
-            v-for="type in typeList"
-            :key="type.typeId"
-            :label="type.typeName"
-            :value="type.typeId">
-          </el-option>
-        </el-select>
+      <el-form-item label="歌手">
+        <el-input v-model="music.artist"></el-input>
       </el-form-item>
       <el-form-item label="封面">
-        <el-input v-model="music.musicImage"></el-input>
         <el-upload
           class="avatar-uploader"
           :action="uploadUrl"
@@ -26,14 +18,19 @@
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
         </el-upload>
       </el-form-item>
-      <el-form-item label="内容">
-        <tinymce v-model="music.musicContent"/>
+
+      <el-form-item label="歌曲文件">
+        <el-upload
+          :action="uploadUrl"
+          :headers="headers"
+          :limit="1"
+          :on-success="uploadMusicSuccess"
+          :file-list="fileList">
+          <el-button size="small" type="primary">点击上传</el-button>
+        </el-upload>
       </el-form-item>
-      <el-form-item label="来源">
-        <el-input v-model="music.musicSource"></el-input>
-      </el-form-item>
-      <el-form-item label="备注" >
-        <el-input v-model="music.musicRemark" type="textarea"></el-input>
+      <el-form-item label="歌词">
+        <el-input v-model="music.lrc"></el-input>
       </el-form-item>
       <el-form-item>
         <el-button @click="cancelForm">取 消</el-button>
@@ -45,13 +42,11 @@
 
 <script>
   import musicApi from '@/api/music'
-  import Tinymce from '@/components/Tinymce'
   import { getToken } from '@/utils/auth'
 
 
   export default {
     name: 'music-update',
-    components:{Tinymce},
     props: {
       music: {
         type: Object,
@@ -59,8 +54,14 @@
       }
     },
     watch: {
-      'music.musicImage': function(newVal, oldVal) {
+      'music.cover': function(newVal, oldVal) {
         this.imageUrl = newVal
+      },
+      'music.url': function(newVal, oldVal) {
+        this.fileList = [{
+          name: this.music.name,
+          url: this.music.url
+        }]
       },
     },
     data() {
@@ -72,6 +73,7 @@
         uploadUrl: process.env.VUE_APP_UPLOAD_API, // 上传图片路径
         typeList: this.$store.getters.typeList,
         loading: false,
+        fileList: []
       }
     },
     methods: {
@@ -96,6 +98,10 @@
         this.$message.success(res.msg)
         this.imageUrl = res.data
         this.music.musicImage = res.data
+      },
+      uploadMusicSuccess(res, file) {
+        this.$message.success(res.msg)
+        this.music.url = res.data
       },
     }
   }
