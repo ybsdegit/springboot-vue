@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-card title="推荐阅读" :headStyle="headStyle" :bodyStyle="bodyStyle">
+    <a-card title="推荐阅读" :head-style="headStyle" :body-style="bodyStyle">
       <router-link to="/" class="recom-card">
         <div class="blog-title">文章标题</div>
         <div class="blog-type">分类:
@@ -9,10 +9,10 @@
         <div class="blog-bottom">
           <div class="blog-time">2020-04-11 22:00:00</div>
           <div class="blog-meta">
-            <a-icon type="eye"/> 0
-            <a-icon type="heart"/> 0
-            <a-icon type="like"/> 0
-            <a-icon type="message"/> 0
+            <a-icon type="eye" /> 0
+            <a-icon type="heart" /> 0
+            <a-icon type="like" /> 0
+            <a-icon type="message" /> 0
           </div>
         </div>
       </router-link>
@@ -21,28 +21,28 @@
 </template>
 
 <script>
-  export default {
-    name: "recommend",
-    data() {
-      return {
-        headStyle: {
-          fontSize: '18px',
-          fontWeight: 'bold',
-          lineHeight: '15px',
-          borderLeft: '5px solid #409eff'
-        },
-        bodyStyle: {
-          maxHeight: '530px',
-          overflow: 'hidden'
-        }
-      }
-    },
-    methods: {
-      test() {
-
+export default {
+  name: 'Recommend',
+  data() {
+    return {
+      headStyle: {
+        fontSize: '18px',
+        fontWeight: 'bold',
+        lineHeight: '15px',
+        borderLeft: '5px solid #409eff'
       },
+      bodyStyle: {
+        maxHeight: '530px',
+        overflow: 'hidden'
+      }
+    }
+  },
+  methods: {
+    test() {
+
     }
   }
+}
 
 </script>
 
@@ -81,6 +81,5 @@
     color: #b8b8b8;
     margin-bottom: 2px;
   }
-
 
 </style>

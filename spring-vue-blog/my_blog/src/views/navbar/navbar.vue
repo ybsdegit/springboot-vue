@@ -8,42 +8,42 @@
       <div class="nav-menu-search">
         <a-menu v-model="current" mode="horizontal">
           <a-menu-item key="1">
-            <a-icon type="mail"/>
+            <a-icon type="mail" />
             首页
           </a-menu-item>
           <a-menu-item key="2">
-            <a-icon type="mail"/>
+            <a-icon type="mail" />
             分类
           </a-menu-item>
           <a-menu-item key="3">
-            <a-icon type="mail"/>
+            <a-icon type="mail" />
             时间轴
           </a-menu-item>
           <a-menu-item key="4">
-            <a-icon type="mail"/>
+            <a-icon type="mail" />
             关于我
           </a-menu-item>
         </a-menu>
-        <a-input-search placeholder="搜索你想要的" style="width: 200px" @search="onSearch"/>
+        <a-input-search placeholder="搜索你想要的" style="width: 200px" @search="onSearch" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "navbar",
-    data() {
-      return {
-        current: ['1'],
-      };
-    },
-    methods: {
-      onSearch(value) {
-        console.log(value);
-      },
-    },
-  };
+export default {
+  name: 'Navbar',
+  data() {
+    return {
+      current: ['1']
+    }
+  },
+  methods: {
+    onSearch(value) {
+      console.log(value)
+    }
+  }
+}
 </script>
 
 <style>

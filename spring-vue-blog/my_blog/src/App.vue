@@ -1,30 +1,37 @@
 <template>
   <div id="app" class="main">
-    <nav-bar/>
+    <nav-bar />
     <div class="main-container">
       <div class="left-container">
-        <router-view/>
+        <a-locale-provider :locale="locale">
+          <router-view />
+        </a-locale-provider>
       </div>
-      <right/>
-
+      <right />
     </div>
+    <bottom />
+    <a-back-top />
   </div>
 </template>
+
 <script>
-  import NavBar from './views/navbar/navbar'
-  import Right from './views/right/right'
+import zhCN from 'ant-design-vue/lib/locale-provider/zh_CN'
+import NavBar from './views/navbar/navbar'
+import Right from './views/right/right'
+import Bottom from './views/bottom/index'
 
-  export default {
-    components: {
-      NavBar, Right
-    },
-    data() {
-      return {
-        current: ['1'],
-      };
-    },
+export default {
+  components: {
+    NavBar, Right, Bottom
+  },
+  data() {
+    return {
+      current: ['1'],
+      locale: zhCN
+    }
+  }
 
-  };
+}
 </script>
 
 <style>
@@ -39,11 +46,8 @@
   }
 
   .left-container {
-    background-color: green;
     width: 850px;
     padding: 0 10px;
   }
 </style>
-
-
 
