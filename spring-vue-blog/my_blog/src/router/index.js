@@ -8,23 +8,28 @@ const routes = [
   {
     path: '/',
     name: 'Index',
-    component: () => import('../views/index/index'),
+    component: () => import('../views/index/index')
   },
   {
     path: '/type',
     name: 'Type',
-    component: () => import('../views/type/type'),
+    component: () => import('../views/type/type')
   },
   {
     path: '/timeLine',
     name: 'TimeLime',
-    component: () => import('../views/time-line/time-line'),
+    component: () => import('../views/time-line/time-line')
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/about/about'),
+    component: () => import('../views/about/about')
   },
+  {
+    path: '/info/:id',
+    name: 'Info',
+    component: () => import('../views/blog/index')
+  }
 
 ]
 
