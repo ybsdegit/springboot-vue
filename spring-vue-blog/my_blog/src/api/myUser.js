@@ -1,29 +1,27 @@
 import request from '@/utils/request'
 var group_name = 'user'
 export default {
-
-  save(user) { // 添加
+  login(user) { // 登录
     return request({
-      url: `/${group_name}/save`,
+      url: `/${group_name}/login`,
       method: 'post',
       data: user
     })
   },
-  getByPage(page) { // 分页查询
+  register(user) { // 注册
     return request({
-      url: `/${group_name}/getByPage`,
+      url: `/${group_name}/register`,
       method: 'post',
-      data: page
+      data: user
     })
   },
   update(user) { // 更新
     return request({
-      url: `/${group_name}/update`,
+      url: `/${group_name}/updateInfo`,
       method: 'put',
       data: user
     })
   },
-
   resetPwd(userIds) { // 重置密码
     return request({
       url: `/${group_name}/resetPwd`,
@@ -31,11 +29,10 @@ export default {
       data: userIds
     })
   },
-  deleteById(id) { // 根据id删除
+  deleteById(id) { // 删除
     return request({
       url: `/${group_name}/delete/${id}`,
-      method: 'delete',
-      data: { id: id }
+      method: 'delete'
     })
   },
   get(id) { // 根据id查询
@@ -44,4 +41,10 @@ export default {
       method: 'get'
     })
   },
+  commentAndCollectionCount() { // 查询收藏数和评论数
+    return request({
+      url: `/${group_name}/commentAndCollectionCount`,
+      method: 'get'
+    })
+  }
 }

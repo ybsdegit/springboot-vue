@@ -42,12 +42,21 @@ public class ShiroConfig {
          *  role：该资源必须得到角色权限才可以访问
          */
         Map<String, String> filterMap = Maps.newHashMap();
-        filterMap.put("/admin/login", "anon");
-        filterMap.put("/admin/logout", "anon");
-        filterMap.put("/upload/**", "anon");
-        filterMap.put("/*/getByPage", "anon");
-        filterMap.put("/*/get/**", "anon");
-        filterMap.put("/type/all", "anon");
+        filterMap.put("/*/login", "anon");
+        filterMap.put("/*/register", "anon");
+        filterMap.put("/about/*", "anon");
+        filterMap.put("/about/read", "anon");
+        filterMap.put("/link/list", "anon");
+        filterMap.put("/music/getList", "anon");
+        filterMap.put("/music/getByPage", "anon");
+        filterMap.put("/type/getList", "anon");
+        filterMap.put("/blog/recomRead", "anon");
+        filterMap.put("/blog/getByPage", "anon");
+        filterMap.put("/blog/read/**", "anon");
+        filterMap.put("/blog/getTimeLine", "anon");
+        filterMap.put("/admin/getAdmin", "anon");
+        filterMap.put("/admin/**", "anon");
+        filterMap.put("/comment/getByBlog/**", "anon");
         filterMap.put("/**", "authc");
 
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);

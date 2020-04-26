@@ -1,38 +1,43 @@
 <template>
   <div>
-    <a-card title="友情链接" :headStyle="headStyle" :bodyStyle="bodyStyle">
+    <a-card title="友情链接" :head-style="headStyle" :body-style="bodyStyle">
       <div class="link-container">
-        <a href="www.baidu.com">百度</a>
-        <a href="www.baidu.com">百度</a>
-        <a href="www.baidu.com">百度</a>
+        <a v-for="item in linkList" :key="item.linkId" target="_blank" :href="item.linkUrl">{{ item.linkName }}</a>
       </div>
     </a-card>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "my-link",
-    data() {
-      return {
-        headStyle: {
-          fontSize: '18px',
-          fontWeight: 'bold',
-          lineHeight: '15px',
-          borderLeft: '5px solid #409eff'
-        },
-        bodyStyle: {
-          maxHeight: '530px',
-          overflow: 'hidden'
-        }
-      }
-    },
-    methods: {
-      test() {
-
+import linkApi from '@/api/link'
+export default {
+  name: 'MyLink',
+  data() {
+    return {
+      headStyle: {
+        fontSize: '18px',
+        fontWeight: 'bold',
+        lineHeight: '15px',
+        borderLeft: '5px solid #409eff'
       },
+      linkList: [],
+      bodyStyle: {
+        maxHeight: '530px',
+        overflow: 'hidden'
+      }
+    }
+  },
+  created() {
+    this.getLinkList()
+  },
+  methods: {
+    getLinkList() {
+      linkApi.getList().then(res => {
+        this.linkList = res.data
+      })
     }
   }
+}
 
 </script>
 
@@ -46,7 +51,7 @@
   .link-container a {
     font-size: 24px;
     width: 60px;
+    margin-right: 15px;
   }
-
 
 </style>

@@ -30,6 +30,10 @@
         </a-menu>
         <a-input-search placeholder="搜索你想要的" style="width: 200px" @search="onSearch" />
       </div>
+      <!-- <router-link to="/login" class="login">登录/注册</router-link> -->
+      <router-link to="/manage" class="login-header">
+        <img src="@/assets/header.gif" class="login-header-img">
+      </router-link>
     </div>
   </div>
 </template>
@@ -93,6 +97,17 @@ export default {
 
   .ant-menu-horizontal {
     border-bottom: none !important;
+  }
+
+  .login-header{
+   color: black;
+   margin-left: 20px;
+  }
+  .login-header-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #e5e5e5;
   }
 
 </style>

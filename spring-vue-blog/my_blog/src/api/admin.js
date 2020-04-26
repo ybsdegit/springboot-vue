@@ -1,5 +1,4 @@
 import request from '@/utils/request'
-
 var group_name = 'admin'
 export default {
   getAdmin() { // 查询管理员
@@ -8,19 +7,18 @@ export default {
       method: 'get'
     })
   },
-  updateInfo(admin) { // 更新
+  update(admin) { // 更新
     return request({
       url: `/${group_name}/updateInfo`,
       method: 'put',
       data: admin
     })
   },
-  updatePassword(admin) { // 更新
+  updatePassword(admin) { // 更新密码
     return request({
       url: `/${group_name}/updatePassword`,
       method: 'put',
       data: admin
     })
-  },
-
+  }
 }

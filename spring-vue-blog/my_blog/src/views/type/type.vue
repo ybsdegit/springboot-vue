@@ -4,19 +4,31 @@
       <div class="type-title">分类</div>
       <div class="type-count">共计 10 个分类</div>
       <div class="type-content">
-        <div class="tyle-itme">Java</div>
-        <div class="tyle-itme">Java</div>
-        <div class="tyle-itme">Java</div>
-        <div class="tyle-itme">Java</div>
-        <div class="tyle-itme">Java</div>
+        <router-link v-for="item in typeList" :key="item.typeId" :to="'/blogList/'+item.typeId" class="type-item">{{ item.typeName }} （{{ item.typeBlogCount }}）</router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import typeApi from '@/api/type'
 export default {
-  name: 'Type'
+  name: 'Type',
+  data() {
+    return {
+      typeList: [] // 分类列表
+    }
+  },
+  created() {
+    this.getTypeList()
+  },
+  methods: {
+    getTypeList() {
+      typeApi.getList().then(res => {
+        this.typeList = res.data
+      })
+    }
+  }
 }
 </script>
 

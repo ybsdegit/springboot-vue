@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import musicApi from '@/api/music'
+
 export default {
   name: 'Music',
   data() {
@@ -28,9 +30,14 @@ export default {
       ]
     }
   },
+  async created() {
+    await this.getMusicList()
+  },
   methods: {
-    test() {
-
+    async getMusicList() {
+      await musicApi.getList().then(res => {
+        this.audio = res.data
+      })
     }
   }
 }

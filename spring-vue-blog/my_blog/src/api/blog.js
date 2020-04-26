@@ -1,39 +1,62 @@
 import request from '@/utils/request'
-var group_name = 'type'
+var group_name = 'blog'
 export default {
-
-  save(blog) { // 添加
-    return request({
-      url: `/${group_name}/save`,
-      method: 'post',
-      data: blog
-    })
-  },
-  getByPage(page) { // 分页查询
+  getByPage(page) { // 前台查询
     return request({
       url: `/${group_name}/getByPage`,
       method: 'post',
       data: page
     })
   },
-  update(blog) { // 更新
+  getCollectionList(page) { // 分页查询我的收藏
     return request({
-      url: `/${group_name}/update`,
-      method: 'put',
-      data: blog
+      url: `/${group_name}/getCollectionList`,
+      method: 'post',
+      data: page
     })
   },
-  deleteById(id) { // 根据id删除
+  goodByBlog(blogGoods) { // 点赞
     return request({
-      url: `/${group_name}/delete/${id}`,
-      method: 'delete',
-      data: { id: id }
+      url: `/${group_name}/good`,
+      method: 'post',
+      data: blogGoods
     })
   },
-  get(id) { // 根据id查询
+  getGood(blogId) { // 查询点赞情况
     return request({
-      url: `/${group_name}/get/${id}`,
+      url: `/${group_name}/getGood/${blogId}`,
       method: 'get'
     })
   },
+  collectionByBlog(blogCollection) { // 收藏
+    return request({
+      url: `/${group_name}/collection`,
+      method: 'post',
+      data: blogCollection
+    })
+  },
+  getCollection(blogId) { // 查询收藏情况
+    return request({
+      url: `/${group_name}/getCollection/${blogId}`,
+      method: 'get'
+    })
+  },
+  getTimeLine() { // 查询时间轴
+    return request({
+      url: `/${group_name}/getTimeLine`,
+      method: 'get'
+    })
+  },
+  recomRead() { // 推荐阅读
+    return request({
+      url: `/${group_name}/recomRead`,
+      method: 'get'
+    })
+  },
+  readById(id) { // 根据id阅读
+    return request({
+      url: `/${group_name}/read/${id}`,
+      method: 'get'
+    })
+  }
 }

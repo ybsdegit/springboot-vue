@@ -1,7 +1,6 @@
 import request from '@/utils/request'
 var group_name = 'music'
 export default {
-
   save(music) { // 添加
     return request({
       url: `/${group_name}/save`,
@@ -9,11 +8,10 @@ export default {
       data: music
     })
   },
-  getByPage(page) { // 分页查询
+  getList() { // 前台查询
     return request({
-      url: `/${group_name}/getByPage`,
-      method: 'post',
-      data: page
+      url: `/${group_name}/getList`,
+      method: 'get'
     })
   },
   update(music) { // 更新
@@ -23,11 +21,10 @@ export default {
       data: music
     })
   },
-  deleteById(id) { // 根据id删除
+  deleteById(id) { // 删除
     return request({
       url: `/${group_name}/delete/${id}`,
-      method: 'delete',
-      data: { id: id }
+      method: 'delete'
     })
   },
   get(id) { // 根据id查询
@@ -39,13 +36,13 @@ export default {
   enableById(id) { // 启用
     return request({
       url: `/${group_name}/enable/${id}`,
-      method: 'put',
+      method: 'put'
     })
   },
-  disableById(id) { // 弃用
+  disableById(id) { // 添加
     return request({
       url: `/${group_name}/disable/${id}`,
-      method: 'put',
+      method: 'put'
     })
-  },
+  }
 }

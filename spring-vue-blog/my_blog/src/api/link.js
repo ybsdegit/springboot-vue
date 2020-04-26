@@ -1,15 +1,14 @@
 import request from '@/utils/request'
 var group_name = 'link'
 export default {
-
-  save(link) { // 保存
+  save(link) { // 添加
     return request({
       url: `/${group_name}/save`,
       method: 'post',
       data: link
     })
   },
-  listBack() { // 查询
+  getList() { // 查询
     return request({
       url: `/${group_name}/list`,
       method: 'get'
@@ -22,12 +21,10 @@ export default {
       data: link
     })
   },
-
-  deleteById(id) { // 根据id删除
+  deleteById(id) { // 删除
     return request({
       url: `/${group_name}/delete/${id}`,
-      method: 'delete',
-      data: { id: id }
+      method: 'delete'
     })
   },
   get(id) { // 根据id查询
@@ -35,5 +32,5 @@ export default {
       url: `/${group_name}/get/${id}`,
       method: 'get'
     })
-  },
+  }
 }
