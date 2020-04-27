@@ -19,26 +19,27 @@
         </a-menu>
       </div>
     </div>
+
     <div class="blog-list-container">
-      <a-card :body-style="blogbodyStyle" class="blog-card">
+      <a-card v-for="item in page.list" :key="item.blogId" :body-style="blogBodyStyle" class="blog-card">
         <div class="blog-main">
-          <div class="blog-image">
-            <img src="@/assets/springboot.jpg" class="blog-cover">
+          <div v-if="item.blogImage" class="blog-image">
+            <img :src="item.blogImage" class="blog-cover">
           </div>
-          <router-link to="/info/1" class="blog-container">
-            <div class="blog-title">哈哈哈</div>
-            <div class="blog-comment">博客介绍介绍介绍介绍</div>
+          <router-link :to="'/info/'+item.blogId" :class="item.blogImage ? 'image-blog' : 'blog-container'">
+            <div class="blog-title">{{ item.blogTitle }}</div>
+            <div class="blog-comment">{{ item.blogRemark }}</div>
             <div class="blog-bottom">
               <div class="blog-type">
-                分类: <a-tag color="blue">前端</a-tag>
+                分类：<a-tag color="green">{{ item.typeName }}</a-tag>
               </div>
               <div class="blog-meta">
-                <div class="blog-time">2020-04-22</div>
+                <div class="blog-time">{{ item.createdTime }}</div>
                 <div class="blog-other">
-                  <a-icon type="eye" /> 0
-                  <a-icon type="heart" /> 0
-                  <a-icon type="like" /> 0
-                  <a-icon type="message" /> 0
+                  <a-icon type="eye" /> {{ item.blogRead }}
+                  <a-icon type="heart" /> {{ item.blogCollection }}
+                  <a-icon type="like" /> {{ item.blogGoods }}
+                  <a-icon type="message" /> {{ item.blogComment }}
                 </div>
               </div>
             </div>
@@ -48,14 +49,14 @@
     </div>
 
     <div class="blog-pagination">
-      <a-pagination :show-total="total => `共 ${total} 条`" show-quick-jumper :default-current="2" :total="500" @change="pageChage" />
-      <br>
+      <a-pagination :show-total="total => `共 ${total} 条`" show-quick-jumper :default-current="1" :total="page.totalCount" @change="pageChange" />
     </div>
 
   </div>
 </template>
 
 <script>
+import blogApi from '@/api/blog'
 export default {
   props: {
     name: {
@@ -68,12 +69,38 @@ export default {
       current: ['1'],
       blogbodyStyle: {
         padding: '18px'
+      },
+      page: {
+        currentPage: 1,
+        pageSize: 10,
+        totalCount: 0,
+        totalPage: 0,
+        params: {},
+        sortColumn: 'createdTime',
+        sortMethod: 'desc',
+        list: []
       }
     }
   },
+  created() {
+    if (this.$route.params.type) {
+      this.page.params.typeId = this.$route.params.type
+    }
+    this.getByPage()
+  },
   methods: {
-    pageChage(pageNumber) {
-      console.log('Page: ', pageNumber)
+    pageChange(pageNumber) {
+      this.page.currentPage = pageNumber
+      this.getByPage()
+    },
+    getByPage() {
+      blogApi.getByPage(this.page).then(res => {
+        this.page = res.data
+      })
+    },
+    changeSort(e) {
+      this.page.sortColumn = e.key
+      this.getByPage()
     }
   }
 }

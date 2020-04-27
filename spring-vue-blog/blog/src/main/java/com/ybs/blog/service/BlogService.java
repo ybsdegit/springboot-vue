@@ -4,6 +4,8 @@ import com.ybs.blog.pojo.Blog;
 import com.ybs.blog.utils.Page;
 import com.ybs.blog.vo.BlogVo;
 
+import java.util.List;
+
 /**
  * <p>
  * 博客表服务层接口
@@ -51,4 +53,12 @@ public interface BlogService {
      * @return
      */
     Page<BlogVo> getByPage(Page<BlogVo> page);
+
+    /**
+     * 查询时间轴
+     * @return
+     */
+    List<BlogVo> getTimeLine();
+
+    List<BlogVo> recomRead();
 }

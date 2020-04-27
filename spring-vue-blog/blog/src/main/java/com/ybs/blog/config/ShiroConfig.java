@@ -42,10 +42,10 @@ public class ShiroConfig {
          *  role：该资源必须得到角色权限才可以访问
          */
         Map<String, String> filterMap = Maps.newHashMap();
-        filterMap.put("/*/login", "anon");
-        filterMap.put("/*/register", "anon");
         filterMap.put("/about/*", "anon");
         filterMap.put("/about/read", "anon");
+        filterMap.put("/*/login", "anon");
+        filterMap.put("/*/register", "anon");
         filterMap.put("/link/list", "anon");
         filterMap.put("/music/getList", "anon");
         filterMap.put("/music/getByPage", "anon");
@@ -53,6 +53,7 @@ public class ShiroConfig {
         filterMap.put("/blog/recomRead", "anon");
         filterMap.put("/blog/getByPage", "anon");
         filterMap.put("/blog/read/**", "anon");
+        filterMap.put("/blog/**", "anon");
         filterMap.put("/blog/getTimeLine", "anon");
         filterMap.put("/admin/getAdmin", "anon");
         filterMap.put("/admin/**", "anon");

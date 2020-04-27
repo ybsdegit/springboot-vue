@@ -33,21 +33,21 @@ const routes = [
       {
         path: '/manage',
         name: 'Manage',
-        redirect: 'userInfo',
+        redirect: '/manage/userInfo',
         component: () => import('../views/manage/index'),
         children: [
           {
-            path: '/userInfo',
+            path: 'userInfo',
             name: 'UserInfo',
             component: () => import('../views/manage/user-info')
           },
           {
-            path: '/collection',
+            path: 'collection',
             name: 'Collection',
             component: () => import('../views/manage/user-collection')
           },
           {
-            path: '/comment',
+            path: 'comment',
             name: 'Comment',
             component: () => import('../views/manage/user-comment')
           }

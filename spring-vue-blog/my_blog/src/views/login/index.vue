@@ -96,6 +96,9 @@
   </div>
 </template>
 <script>
+import userApi from '@/api/myUser'
+import md5 from 'js-md5'
+import { setToken } from '@/utils/auth'
 export default {
   data() {
     return {
@@ -125,7 +128,13 @@ export default {
       this.loginForm.validateFields((err, values) => {
         if (!err) {
           console.log('登录参数 ', values)
-          this.$router.push('/')
+          values.password = md5(values.password)
+          userApi.login(values).then(res => {
+            this.$message.info(res.msg)
+            this.$store.commit('SET_USER', res.data.user)
+            setToken(res.data.token)
+            this.$router.push('/')
+          })
         }
       })
     },
@@ -133,6 +142,10 @@ export default {
       e.preventDefault()
       this.registerForm.validateFields((err, values) => {
         if (!err) {
+          values.password = md5(values.password)
+          userApi.register(values).then(res => {
+            this.$message.info(res.msg)
+          })
           console.log('注册参数: ', values)
         }
       })

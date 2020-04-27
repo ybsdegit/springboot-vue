@@ -33,10 +33,9 @@
         <result column="blog_comment" property="blogComment"/>
         <result column="blog_source" property="blogSource"/>
         <result column="created_time" property="createdTime"/>
+        <result column="blog_month" property="blogMonth"/>
         <result column="update_time" property="updateTime"/>
     </resultMap>
-
-
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         blog_id, blog_title,blog_image, blog_content, blog_goods,
@@ -112,7 +111,7 @@
         inner join bl_type as t
         on type_id = blog_type
         where t.deleted = 0 and blog.deleted = 0
-        
+
         <if test="params.blogTitle!=null and params.blogTitle != ''">
             and blog_title like CONCAT('%',#{params.blogTitle},'%')
         </if>
@@ -124,12 +123,12 @@
             order by ${sortColumn} ${sortMethod}
         </if>
         limit #{index}, #{pageSize}
-        
+
 
     </select>
     <select id="getCountByPage" parameterType="com.ybs.blog.utils.Page" resultType="java.lang.Integer">
         select
-            count(*)
+        count(*)
         from bl_blog as blog
         inner join bl_type as t
         on type_id = blog_type
@@ -143,6 +142,28 @@
         </if>
 
 
+    </select>
+    <select id="getTimeLine" resultMap="VoResultMap">
+        select
+        blog_id, blog_title,
+        created_time,
+        date_format(created_time, '%Y-%m') as blog_month
+        from bl_blog
+        order by created_time desc
+    </select>
+
+    <select id="recomRead" resultMap="VoResultMap">
+        select
+        blog_id, blog_title,blog_image, blog_goods,
+        blog_read, blog_collection,
+        created_time,type_name
+        from bl_blog as blog
+        inner join bl_type as t
+        on type_id = blog_type
+        where t.deleted = 0 and blog.deleted = 0
+
+        order by (blog_read+blog_goods) desc
+        limit 5
     </select>
 
 

@@ -1,26 +1,37 @@
 <template>
   <div>
     <a-timeline class="time-line">
-      <a-timeline-item>Create a services site 2015-09-01</a-timeline-item>
-      <a-timeline-item>Solve initial network problems 2015-09-01</a-timeline-item>
-      <a-timeline-item>Technical testing 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
-      <a-timeline-item>Network problems being solved 2015-09-01</a-timeline-item>
+      <div v-for="item in blogList" :key="item.month" class="timeline">
+        <div class="month">{{ item.month }}</div>
+        <a-timeline-item v-for="blog in item.list" :key="blog.blogId">
+          <router-link :to="'/info/' + blog.blogId">{{ blog.createdTime }} --- {{ blog.blogTitle }}</router-link>
+        </a-timeline-item>
+      </div>
+
     </a-timeline>
   </div>
 </template>
 
 <script>
+import blogApi from '@/api/blog'
 export default {
-  name: 'TimeLine'
+  name: 'TimeLine',
+  data() {
+    return {
+      blogList: []
+    }
+  },
+  created() {
+    this.getTimeLine()
+  },
+  methods: {
+    getTimeLine() {
+      blogApi.getTimeLine().then(res => {
+        console.log(res.data)
+        this.blogList = res.data
+      })
+    }
+  }
 }
 </script>
 
@@ -30,4 +41,13 @@ export default {
   padding: 40px 25px;
 }
 
+.month {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #595959;
+}
 </style>

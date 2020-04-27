@@ -30,9 +30,9 @@
         </a-menu>
         <a-input-search placeholder="搜索你想要的" style="width: 200px" @search="onSearch" />
       </div>
-      <!-- <router-link to="/login" class="login">登录/注册</router-link> -->
-      <router-link to="/manage" class="login-header">
-        <img src="@/assets/header.gif" class="login-header-img">
+      <router-link v-if="!user.username" to="/login" class="login">登录/注册</router-link>
+      <router-link v-else to="/manage" class="login-header">
+        <img :src="user.header" class="login-header-img">
       </router-link>
     </div>
   </div>
@@ -43,7 +43,8 @@ export default {
   name: 'Navbar',
   data() {
     return {
-      current: ['1']
+      current: ['1'],
+      user: this.$store.getters.getUser
     }
   },
   methods: {

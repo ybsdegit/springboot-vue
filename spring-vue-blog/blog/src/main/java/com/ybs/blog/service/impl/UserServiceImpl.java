@@ -85,6 +85,9 @@ public class UserServiceImpl implements UserService {
             throw new BlogException(ResultEnum.PARAMS_ERROR.getCode(), "用户已存在！");
         }
         // 如果不存在，插入数据
+        if (user.getName() == null){
+            user.setName("博客用户");
+        }
         userMapper.save(user);
     }
 

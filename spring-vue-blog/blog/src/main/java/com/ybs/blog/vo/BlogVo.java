@@ -70,6 +70,11 @@ public class BlogVo implements Serializable {
     private String blogSource;
 
     /**
+     * 发布月份
+     */
+    private String blogMonth;
+
+    /**
      * 创建时间
      */
     private String createdTime;

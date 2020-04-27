@@ -1,9 +1,10 @@
 import router from './router'
 import NProgress from 'nprogress' // progress bar
 import 'nprogress/nprogress.css' // progress bar style
+import { getToken } from '@/utils/auth'
 NProgress.configure({ showSpinner: false }) // NProgress Configuration
 
-const whitelist = ['/login', '/']
+const blacklist = ['/manage/userInfo', '/manage/collection', '/manage/comment']
 
 /**
  * 在路由跳转之前进行一些操作
@@ -12,17 +13,19 @@ const whitelist = ['/login', '/']
  * next：这是一个函数，用于控制路由跳转（this.$router.push()）
  */
 router.beforeEach(async(to, from, next) => {
-  console.log(to, from, next)
   NProgress.start()
-  next()
-  // const path = to.path
-  // if (whitelist.indexOf(path) === -1) {
-  //   // 不在白名单，跳转到登录页
-  //   next('/login')
-  // } else {
-  //   // 在白名单，继续下一页。如果是登录页，跳转到首页
-  //   next()
-  // }
+
+  const token = getToken()
+  if (token) {
+    next()
+  } else {
+    // token不存在，判断当前路由是否是黑名单
+    if (blacklist.indexOf(to.path) >= 0) {
+      next('/login')
+    } else {
+      next()
+    }
+  }
   NProgress.done()
 })
 

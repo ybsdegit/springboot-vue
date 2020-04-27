@@ -64,7 +64,7 @@ public class AboutController {
      * 阅读
      * @return
      */
-    @GetMapping("/read")
+    @RequestMapping("/read")
     public Result<About> read(){
         About about = aboutService.read();
         return new Result<>(about);

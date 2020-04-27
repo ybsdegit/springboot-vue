@@ -5,7 +5,6 @@ import com.ybs.blog.exception.BlogException;
 import com.ybs.blog.utils.ShiroUtils;
 import com.ybs.blog.utils.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,16 +20,16 @@ public class LoginInterceptor implements HandlerInterceptor {
      * 放行的白名单
      */
     private static String[] whiteList = {
+            "/about/read",
+            "/blog/read",
             "/admin/login",
             "/user/login",
             "/user/register",
             "/link/list",
             "/music/getByPage",
             "/music/getList",
-            "/about/read",
             "/type/getList",
             "/blog/recomRead",
-            "/blog/read",
             "/blog/getTimeLine",
             "/blog/getByPage",
             "/comment/getByBlog",
@@ -63,7 +62,7 @@ public class LoginInterceptor implements HandlerInterceptor {
      */
     private boolean containsWhiteList(String s) {
         for (String url : whiteList) {
-            if (url.equals(s)) {
+            if (s.contains(url)) {
                 return true;
             }
         }
