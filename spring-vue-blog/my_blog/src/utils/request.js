@@ -1,6 +1,7 @@
 import axios from 'axios'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
+import { message } from 'ant-design-vue'
 
 const service = axios.create({
   baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
@@ -9,7 +10,6 @@ const service = axios.create({
 
 service.interceptors.request.use(
   config => {
-
     if (store.getters.token) {
       config.headers['Authorization'] = getToken()
     }
@@ -23,16 +23,16 @@ service.interceptors.request.use(
 
 service.interceptors.response.use(
 
-
   response => {
     const res = response.data
 
-    if (res.code !== 20000) {
-
-
-      if (res.code === 50008 || res.code === 50012 || res.code === 50014) {
-        // 弹窗提示报错
-      }
+    if (res.code && res.code !== 20000) {
+      // if (res.code === 40003) {
+      //   // 弹窗提示报错
+      //
+      //   // store.commit('SET_USER', {})
+      // }
+      message.error(res.msg)
       return Promise.reject(new Error(res.msg || 'Error'))
     } else {
       return res
@@ -40,6 +40,7 @@ service.interceptors.response.use(
   },
   error => {
     console.log('err' + error) // for debug
+    message.error('Request failed with status code 404')
     return Promise.reject(error)
   }
 )

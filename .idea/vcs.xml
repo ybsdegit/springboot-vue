@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/VBlog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-vue-white-jotter/White-Jotter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-vue-white-jotter/White-Jotter-Vue" vcs="Git" />
   </component>
 </project>

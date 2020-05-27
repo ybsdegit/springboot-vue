@@ -1,18 +1,16 @@
 <template>
   <div>
     <a-card title="推荐阅读" :head-style="headStyle" :body-style="bodyStyle">
-      <router-link to="/" class="recom-card">
-        <div class="blog-title">文章标题</div>
-        <div class="blog-type">分类:
-          <a-tag color="blue">前端</a-tag>
-        </div>
+      <router-link v-for="item in recommendList" :key="item.blogId" :to="'/info/'+item.blogId" class="recom-card">
+        <div class="blog-title">{{ item.blogTitle }}</div>
+        <div class="blog-type">分类：<a-tag color="green">{{ item.typeName }}</a-tag></div>
         <div class="blog-bottom">
-          <div class="blog-time">2020-04-11 22:00:00</div>
+          <div class="blog-time">{{ item.createdTime }}</div>
           <div class="blog-meta">
-            <a-icon type="eye" /> 0
-            <a-icon type="heart" /> 0
-            <a-icon type="like" /> 0
-            <a-icon type="message" /> 0
+            <a-icon type="eye" /> {{ item.blogRead }}
+            <a-icon type="heart" /> {{ item.blogCollection }}
+            <a-icon type="like" /> {{ item.blogGoods }}
+            <a-icon type="message" /> {{ item.blogComment }}
           </div>
         </div>
       </router-link>
@@ -21,6 +19,7 @@
 </template>
 
 <script>
+import blogApi from '@/api/blog'
 export default {
   name: 'Recommend',
   data() {
@@ -34,12 +33,18 @@ export default {
       bodyStyle: {
         maxHeight: '530px',
         overflow: 'hidden'
-      }
+      },
+      recommendList: [] // 推荐阅读列表
     }
   },
+  created() {
+    this.getRecomRead()
+  },
   methods: {
-    test() {
-
+    getRecomRead() {
+      blogApi.recomRead().then(res => {
+        this.recommendList = res.data
+      })
     }
   }
 }

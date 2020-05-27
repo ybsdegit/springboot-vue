@@ -2,16 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34e0cc00-3916-495e-a0de-8636e8901789" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/main/java/com/ybs/seckil/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/main/java/com/ybs/seckil/controller/SamplerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/main/java/com/ybs/seckil/controller/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/main/java/com/ybs/seckil/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/main/java/com/ybs/seckil/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/main/java/com/ybs/seckil/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/main/java/com/ybs/seckil/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-vue-seckill/src/test/java/com/ybs/seckil/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-vue-seckill/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-seckill/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/exp/f01.exp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/exp/f02.exp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/exp/f03.exp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/exp/f04.exp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/moc/shizuku.1024/texture_00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/moc/shizuku.1024/texture_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/moc/shizuku.1024/texture_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/moc/shizuku.1024/texture_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/moc/shizuku.1024/texture_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/moc/shizuku.1024/texture_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/moc/shizuku.moc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/flickHead_00.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/flickHead_01.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/flickHead_02.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/idle_00.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/idle_01.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/idle_02.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/pinchIn_00.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/pinchIn_01.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/pinchIn_02.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/pinchOut_00.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/pinchOut_01.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/pinchOut_02.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/shake_00.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/shake_01.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/shake_02.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/tapBody_00.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/tapBody_01.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/mtn/tapBody_02.mtn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/shizuku.model.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/shizuku.physics.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/shizuku.pose.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/flickHead_00.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/flickHead_01.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/flickHead_02.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/pinchIn_00.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/pinchIn_01.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/pinchIn_02.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/pinchOut_00.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/pinchOut_01.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/pinchOut_02.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/shake_00.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/shake_01.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/shake_02.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/tapBody_00.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/tapBody_01.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/public/live2dw/live2d-widget-model-shizuku/assets/snd/tapBody_02.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-blog/blog/logs/blog-all.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-blog/blog/logs/blog-all.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-blog/blog/logs/blog-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-blog/blog/logs/blog-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-blog/blog/logs/blog-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-blog/blog/logs/blog-info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-blog/my_blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-blog/my_blog/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-blog/my_blog/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-blog/my_blog/src/views/blog/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/src/views/blog/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-blog/my_blog/src/views/right/recommend.vue" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-blog/my_blog/src/views/right/recommend.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-white-jotter/White-Jotter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-white-jotter/White-Jotter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-vue-white-jotter/White-Jotter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-vue-white-jotter/White-Jotter/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +84,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -48,10 +100,25 @@
       <option name="presentableId" value="Default" />
       <updated>1584007823581</updated>
       <workItem from="1584007825748" duration="2141000" />
+      <workItem from="1590593918160" duration="299000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2059" y="478" key="#Notifications" timestamp="1590593937797">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state x="2059" y="478" key="#Notifications/0.30.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1590593937797" />
+    <state x="1968" y="462" key="SettingsEditor" timestamp="1590593960438">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state x="1968" y="462" key="SettingsEditor/0.30.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1590593960438" />
+    <state x="2313" y="735" key="VCS.ChangelistChooser" timestamp="1590594022069">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state x="2313" y="735" key="VCS.ChangelistChooser/0.30.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1590594022069" />
   </component>
 </project>
