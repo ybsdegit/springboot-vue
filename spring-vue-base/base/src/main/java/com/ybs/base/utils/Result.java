@@ -60,4 +60,24 @@ public class Result<T> implements Serializable {
         this.msg = msg;
         this.data = data;
     }
+    
+    public static Result success() {
+        return new Result();
+    }
+
+    public static Result success(Object data) {
+        return new Result(data);
+    }
+
+    public static Result success(String message) {
+        return new Result(message);
+    }
+
+    public static Result fail() {
+        return new Result(ResultEnum.ERROR.getCode(), ResultEnum.ERROR.getMsg());
+    }
+
+    public static Result fail(String message) {
+        return new Result(ResultEnum.ERROR.getCode(), message);
+    }
 }
